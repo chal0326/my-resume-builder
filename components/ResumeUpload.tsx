@@ -5,7 +5,6 @@ import { supabase } from '@/lib/supabaseClient';
 import { useState } from 'react';
 import { Text, Group, Button, Notification, Box } from '@mantine/core';
 import { IconCheck, IconX } from '@tabler/icons-react';
-import { parseResume } from '@/lib/parseResume';
 
 export default function ResumeUpload() {
   const [file, setFile] = useState<FileWithPath | null>(null);
@@ -62,8 +61,11 @@ export default function ResumeUpload() {
       )}
     </Box>
   );
+<<<<<<< HEAD
 
 // Simulate parsing after upload
 const parsedData = await parseResume(fileContents); // Assuming file contents are read
 
+=======
+>>>>>>> 7eeceacbc6887a200c8c0356e1a2be6fdf8299ed
 }
